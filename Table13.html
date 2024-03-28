@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Table</title>
+</head>
+
+<body>
+    <center>
+        <h4>Using TABLETS in Websites</h4>
+        <caption>Caption-Nested Table</caption>
+        <table border="1" cellspacing="3" cellpadding="3">
+            <tr>
+                <th align="center">Column 1</th>
+                <th align="center">Column 2</th>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">Colspan Column</td>
+            </tr>
+            <tr>
+                <td rowspan="2" align="center">Rowspan <br>cell</td>
+                <td align="center">Cell 2</td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="1" cellspacing="5" cellpadding="10" bgcolor="yellow">
+                        <tr>
+                            <th>Inner Column <br>Heading 1</th>
+                            <th>Inner Column Heading 2</th>
+                        </tr>
+                        <tr>
+                            <td rowspan="2" align="center" bgcolor="sky blue">Inner Data Cell <br>1</td>
+                            <td bgcolor="green">
+                                <table border="1" cellspacing="5" cellpadding="10" bgcolor="pink">
+                                    <tr>
+                                        <th bgcolor="pink">Inner Most <br>Column Heading <br>1</th>
+                                        <th bgcolor="pink">Inner Most <br>Column Heading <br>2</th>
+                                    </tr>
+                                    <tr>
+                                        <td align="center" bgcolor="purple">Intermost Data <br>Cell 1</td>
+                                        <td align="center" bgcolor="orange">Intermost Data <br>Cell 2</td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </center>
+</body>
+
+</html>
