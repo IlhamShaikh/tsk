@@ -2,33 +2,165 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
 </head>
 
 <body>
-    <form action="">
- <table>
-  <tr>
-    <td>First Name</td>
-    <td><input type="text" name="" id="">(max 30 character a-z and A-Z)</td>
-  </tr>
-  <tr>
-    <td>Last Name</td>
-    <td><input type="text" name="" id="">(max 30 character a-z and A-Z)</td>
-  </tr>
-  <tr>
-    <td>
-        <select name="" id="">
-        <option value="" disabled selected>Day</option>
-        <option value="">month</option>
-        <option value="">year</option>
-        </select>
-    </td>
-  </tr>
- </table>
- </form>
+  <form action="action.html">
+    <table>
+      <tr>
+        <td>First Name</td>
+        <td><input type="text" name="" id="">(max 30 character a-z and A-Z)</td>
+      </tr>
+      <tr>
+        <td>Last Name</td>
+        <td><input type="text" name="" id="">(max 30 character a-z and A-Z)</td>
+      </tr>
+      <tr>
+        <td>Date Of Birth : </td>
+        <td>
+          <select name="" id="">
+            <option value="" disabled selected>Day</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+          </select>
+          <select name="" id="">
+            <option value="" disabled selected>Month</option>
+            <option value="">01</option>
+            <option value="">02</option>
+            <option value="">03</option>
+          </select>
+          <select name="" id="">
+            <option value="" disabled selected>Year</option>
+            <option value="">2000</option>
+            <option value="">2001</option>
+            <option value="">2002</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Email ID: </td>
+        <td><input type="email"></td>
+      </tr>
+      <tr>
+        <td>Mobile Number</td>
+        <td><input type="text" name="" id="" max="10">(10 digit number)</td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <label for="abc">Male</label>
+          <input type="radio" name="xyz" id="abc">
+          <label for="bcd">Female</label>
+          <input type="radio" name="xyz" id="bcd">
+        </td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+      </tr>
+      <tr>
+        <td>City</td>
+        <td><input type="text" name="" id="">(max 30 character a-z and A-Z)</td>
+      </tr>
+      <tr>
+        <td>PINCODE</td>
+        <td><input type="text" name="" id="">(6 digit number)</td>
+      </tr>
+      <tr>
+        <td>STATE</td>
+        <td><input type="text" name="" id="">(max 30 character a-z and A-Z)</td>
+      </tr>
+      <tr>
+        <td>COUNTRY</td>
+        <td><input type="text" name="" id="" value="India"></td>
+      </tr>
+      <tr>
+        <td>HOBBIES</td>
+        <td> <label for="draw">Drawing</label>
+          <input type="checkbox" name="" id="draw">
+          <label for="sing">Singing</label>
+          <input type="checkbox" name="" id="sing">
+          <label for="sketch">Sketching</label>
+          <input type="checkbox" name="" id="sketch">
+          <label for="">Others</label>
+          <input type="checkbox" name="" id="">
+          <input type="text" name="" id="">
+        </td>
+      </tr>
+      <tr>
+        <td>QUALIFICATION</td>
+        <td>
+          <table>
+            <tr>
+              <td>SI NO.</td>
+              <td>Examination</td>
+              <td>Board</td>
+              <td>Percentage</td>
+              <td>Year of Passing</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>ClassX</td>
+              <td><input type="text" name="" id=""></td>
+              <td><input type="text" name="" id=""></td>
+              <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Class XII</td>
+              <td><input type="text" name="" id=""></td>
+              <td><input type="text" name="" id=""></td>
+              <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Graduation</td>
+              <td><input type="text" name="" id=""></td>
+              <td><input type="text" name="" id=""></td>
+              <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Masters</td>
+              <td><input type="text" name="" id=""></td>
+              <td><input type="text" name="" id=""></td>
+              <td><input type="text" name="" id=""></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td>(10 char. max)</td>
+              <td>(UPTO 2 DECIMAL)</td>
+              <td></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td>COURSES <br>APPLIED FOR</td>
+        <td>
+          <label for="b">BCA</label>
+          <input type="radio" name="a" id="b">
+          <label for="bcom">B.Com</label>
+          <input type="radio" name="a" id="bcom">
+          <label for="bsc">B.Sc</label>
+          <input type="radio" name="a" id="bsc">
+          <label for="ba">B.A</label>
+          <input type="radio" name="a" id="ba">
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="Submit" name="" id="">
+          <input type="Reset" name="" id="">
+        </td>
+      </tr>
+    </table>
+  </form>
 </body>
 
 </html>

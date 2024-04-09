@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selectors</title>
+    <link rel="stylesheet" href="css1.css">
+    <style>
+        /* universal selector */
+        * {
+            font-family: sans-serif;
+        }
+
+        /* class selector */
+        .di {
+            color: rgb(209, 55, 55);
+            background-color: antiquewhite;
+
+        }
+
+        .di1 {
+            color: blue;
+        }
+
+        /* Combinator selector
+        div p {
+            color: rgb(50, 207, 71);
+        } */
+
+        /* Grouping selector */
+        div,p{
+            color: rgb(224, 80, 234);
+        }
+
+        /* Child selector */
+        div > h4 {
+            color: rgb(242, 242, 52);
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="hey">Selectors</h1>
+    <div class="di di1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, itaque?</div>
+    <p class="container">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem corrupti nostrum assumenda ea,
+        dolorem laboriosam.</p>
+    <div class="di">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, qui!</div>
+
+    <div class="di">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi, impedit!
+        </p>
+    </div>
+    
+        <div>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    <div>
+    <h4>heyy</h4>
+    </div>
+</body>
+
+</html>
